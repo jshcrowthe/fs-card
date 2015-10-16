@@ -1,0 +1,31 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- @demo demo/index.html -->
+
+<dom-module id='fs-card'>
+  <link rel="import" type="css" href="styles.css">
+  <template>
+    <h1 hidden='{{!title}}'>{{title}}</h1>
+    <div class='body'>
+      <content></content>
+    </div>
+  </template>
+</dom-module>
+<script>
+(function() {
+  Polymer({
+    is: 'fs-card',
+    properties: {
+      /**
+       * An optional title to be rendered at the top of 
+       * the &lt;fs-card&gt;.
+       * @type {Object}
+       */
+      title: {
+        type: String,
+        value: null
+      }
+    }
+  });
+})();
+</script>
