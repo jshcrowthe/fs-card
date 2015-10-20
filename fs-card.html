@@ -1,11 +1,13 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../fs-styles/fs-styles.html">
 
 <!-- @demo demo/index.html -->
 
 <dom-module id='fs-card'>
   <link rel="import" type="css" href="styles.css">
+  <style include='fs-styles'></style>
   <template>
-    <h1 hidden='{{!title}}'>{{title}}</h1>
+    <h4 class='title' hidden='{{!title}}'>{{title}}</h4>
     <div class='body'>
       <content></content>
     </div>
